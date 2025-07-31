@@ -1,0 +1,102 @@
+/* Fundo e fonte */
+body {
+    background: #f7f7f7;
+    font-family: 'Times New Roman', Times, serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho principal */
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #b2002d;
+    border-bottom: 2px solid #b2002d;
+    padding-bottom: 10px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+/* Menu de navegação */
+ul, nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: #222;
+    padding: 18px 0;
+    margin: 0 0 30px 0;
+    border-bottom: 3px solid #b2002d;
+    border-radius: 0 0 8px 8px;
+}
+
+ul li a, nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 8px 18px;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+ul li a:hover, nav ul li a:hover {
+    background: #b2002d;
+    color: #fff;
+}
+
+/* Títulos das notícias */
+h2 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #b2002d;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    border-bottom: 2px solid #b2002d;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    padding: 10px 0;
+    letter-spacing: 1px;
+}
+
+/* Parágrafos das notícias */
+p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin: 15px auto 25px auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    max-width: 800px;
+}
+
+/* Imagens das notícias */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    max-width: 90vw;
+    height: auto;
+}
+
+/* Link de navegação entre páginas */
+a {
+    color: #b2002d;
+    font-weight: bold;
+    text-decoration: none;
+    transition: text-decoration 0.2s, color 0.2s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #222;
+}
