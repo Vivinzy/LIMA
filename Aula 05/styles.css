@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* Problemas com acentuação */
+
+h2 {
+    color:blueviolet;
+    font-size: 20px;
+}
+body {
+    background-color: beige;
+    font-family: Kode Mono;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "Codystar";
+    src: url("fonts/Codystar-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.2em;
+}
+p {
+    font-family: Bebas Neue, Codystar, sans-serif;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
