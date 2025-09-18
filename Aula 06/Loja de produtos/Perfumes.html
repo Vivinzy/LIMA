@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfumes</title>
+</head>
+<body>
+    <style>
+        button {
+            background-color: #b061ac;
+            color: #000000;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            font-family: 'Raphaela', Art Nouveau;
+        }
+        :root {
+            --cor-principal: #b581b4;
+            --cor-secundaria: #ECF0F1;
+            --cor-acento: #000000;
+            --cor-texto: #7d0e7d;
+        }
+
+
+        body {
+            font-family: 'Raphaela', Art Nouveau;
+            background-color: #ffffff;
+            color: black;
+            margin: 0;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #ffc0fd;
+            color: #000000;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 5px solid #f6f8b8;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.1em;
+            max-width: 600px;
+            margin: 10px auto 0;
+        }
+
+        .carousel {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 40px 0;
+        }
+
+        article.produto {
+            background-color: #ffdcfe;
+            color: #000000;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+            cursor: pointer;
+        }
+
+        article.produto:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        article.produto img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        article.produto h3 {
+            font-size: 1.5em;
+            color: #000000;
+            margin: 10px 0;
+        }
+
+        article.produto .categoria {
+            font-size: 0.9em;
+            font-style: italic;
+            color: #000000;
+        }
+
+        article.produto .preco {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+
+        article.produto .descricao {
+            font-size: 0.9em;
+            color: #000000;
+        }
+
+        footer {
+            background-color: #ffc0fd;
+            color: #000000;
+            padding: 40px 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer .links-uteis {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 20px;
+        }
+
+        aside h4 {
+            color: #000000;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffffff;
+        }
+
+        form input, form button {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-top: 5px;
+        }
+
+        form input {
+            background-color: #b6dea2;
+            color: #000000;
+        }
+
+        form button {
+            background-color: #e0ffca;
+            color: #000000;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        
+        form button:hover {
+            background-color: #ffffff;
+        }
+
+        .creditos {
+            border-top: 1px solid #b6dea2;
+            padding-top: 20px;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .carousel {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            article.produto {
+                width: 90%;
+            }
+            
+            footer .links-uteis {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <header>
+        <div class="container">
+        <a href="Loja de Produtos (Estilo 2025).html"><button>INICIO</button></a>
+        <a href="Roupas.html"><button>ROUPAS</button></a>
+        <a href="Perfumes.html"><button>PERFUMES</button></a>
+        <a href="Acessorios.html"><button>ACESSÓRIOS</button></a>
+        <a href="Bolsas.html"><button>BOLSAS</button></a>
+        <a href="Instrumentos.html"><button>INSTRUMENTOS</button></a>
+        </div>
+    </header>
+
+    
+
+    <main class="container">
+        <div class="carousel">
+            <article class="produto">
+                <img src="Perfume Angel.jpg" alt="Perfume Angel">
+                <h3>Perfume Angel</h3>
+                <p class="categoria">Perfumes</p>
+                <p class="preco">R$ 500,00</p>
+                <p class="descricao">Uma fragrância envolvente que combina notas florais e orientais, perfeita para ocasiões especiais.</p>
+            </article>
+
+            <article class="produto">
+                <img src="Perfume azul mar.jpg" alt="Perfume Azul Mar">
+                <h3>Perfume Azul Mar</h3>
+                <p class="categoria">Perfumes</p>
+                <p class="preco">R$ 880,00</p>
+                <p class="descricao">Uma fragrância fresca e aquática, perfeita para o dia a dia. Combina notas de bergamota, jasmim e musk.</p>
+            </article>
+
+            <article class="produto">
+                <img src="ysl.jpg" alt="Perfume YSL">
+                <h3>Perfume YSL</h3>
+                <p class="categoria">Perfumes</p>
+                <p class="preco">R$ 900,00</p>
+                <p class="descricao">Uma fragrância sofisticada que combina notas de rosa, jasmim e baunilha, perfeita para a mulher moderna.</p>
+            </article>
+
+            <article class="produto">
+                <img src="vivienne.jpg" alt="Perfume Vivienne">
+                <h3>Perfume Vivienne</h3>
+                <p class="categoria">Perfumes</p>
+                <p class="preco">R$ 800,00</p>
+                <p class="descricao">Uma fragrância floral e frutal, perfeita para o dia a dia. Combina notas de pêssego, rosa e musk.</p>
+            </article>
+
+            <article class="produto">
+                <img src="dragon.jpg" alt="Perfume Dragon">
+                <h3>Perfume Dragon</h3>
+                <p class="categoria">Perfumes</p>
+                <p class="preco">R$ 450,00</p>
+                <p class="descricao">Uma fragrância intensa e marcante, perfeita para a noite. Combina notas de madeira, âmbar e especiarias.</p>
+            </article>
+
+            <article class="produto">
+                <img src="moschino.jpg" alt="Perfume Moschino">
+                <h3>Perfume Moschino</h3>
+                <p class="categoria">Perfumes</p>
+                <p class="preco">R$ 399,99</p>
+                <p class="descricao">Uma fragrância divertida e ousada, perfeita para quem gosta de se destacar. Combina notas de frutas vermelhas, flor de laranjeira e baunilha.</p>
+            </article>
+
+          
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roupas</title>
+</head>
+<body>
+    <style>
+        button {
+            background-color: #b061ac;
+            color: #000000;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            font-family: 'Raphaela', Art Nouveau;
+        }
+        :root {
+            --cor-principal: #b581b4;
+            --cor-secundaria: #ECF0F1;
+            --cor-acento: #000000;
+            --cor-texto: #7d0e7d;
+        }
+
+
+        body {
+            font-family: 'Raphaela', Art Nouveau;
+            background-color: #ffffff;
+            color: black;
+            margin: 0;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #ffc0fd;
+            color: #000000;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 5px solid #f6f8b8;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.1em;
+            max-width: 600px;
+            margin: 10px auto 0;
+        }
+
+        .carousel {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 40px 0;
+        }
+
+        article.produto {
+            background-color: #ffdcfe;
+            color: #000000;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+            cursor: pointer;
+        }
+
+        article.produto:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        article.produto img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        article.produto h3 {
+            font-size: 1.5em;
+            color: #000000;
+            margin: 10px 0;
+        }
+
+        article.produto .categoria {
+            font-size: 0.9em;
+            font-style: italic;
+            color: #000000;
+        }
+
+        article.produto .preco {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+
+        article.produto .descricao {
+            font-size: 0.9em;
+            color: #000000;
+        }
+
+        footer {
+            background-color: #ffc0fd;
+            color: #000000;
+            padding: 40px 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer .links-uteis {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 20px;
+        }
+
+        aside h4 {
+            color: #000000;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffffff;
+        }
+
+        form input, form button {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-top: 5px;
+        }
+
+        form input {
+            background-color: #b6dea2;
+            color: #000000;
+        }
+
+        form button {
+            background-color: #e0ffca;
+            color: #000000;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        
+        form button:hover {
+            background-color: #ffffff;
+        }
+
+        .creditos {
+            border-top: 1px solid #b6dea2;
+            padding-top: 20px;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .carousel {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            article.produto {
+                width: 90%;
+            }
+            
+            footer .links-uteis {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <header>
+        <div class="container">
+        <a href="Loja de Produtos (Estilo 2025).html"><button>INICIO</button></a>
+        <a href="Roupas.html"><button>ROUPAS</button></a>
+        <a href="Perfumes.html"><button>PERFUMES</button></a>
+        <a href="Acessorios.html"><button>ACESSÓRIOS</button></a>
+        <a href="Bolsas.html"><button>BOLSAS</button></a>
+        <a href="Instrumentos.html"><button>INSTRUMENTOS</button></a>
+        </div>
+    </header>
+
+    
+
+    <main class="container">
+        <div class="carousel">
+            <article class="produto">
+                <img src="f0bad231f283a88f628fcaf7dab797fc.jpg" alt="Jaqueta Adidas">
+                <h3>Adidas Track Jacket 🐉 Yohji Yamamoto x Adidas</h3>
+                <p class="categoria">Moda</p>
+                <p class="preco">R$ 450,00</p>
+                <p class="descricao">Jaqueta de alta performance, ideal para quem busca estilo e conforto. Feita com materiais sustentáveis e tecnologia de ponta.</p>
+            </article>
+
+            <article class="produto">
+                <img src="17583e8bd9e03c8a24f253574040a742.jpg" alt="Planet Girls">
+                <h3>Corta Vento Planet Girls</h3>
+                <p class="categoria">Moda</p>
+                <p class="preco">R$ 280,00</p>
+                <p class="descricao">Corta vento leve e estiloso, perfeito para dias de vento. Feito com materiais recicláveis e design moderno.</p>
+            </article>
+
+            <article class="produto">
+                <img src="flamengo.jpg" alt="Jaqueta do Flamengo">
+                <h3>Blusa de Frio Original Flamengo</h3>
+                <p class="categoria">Moda</p>
+                <p class="preco">R$ 359,99</p>
+                <p class="descricao">Blusa de Frio Flamengo, ideal para torcedores. Confeccionado em material leve e respirável.</p>
+            </article>
+
+            <article class="produto">
+                <img src="Vestido florido.jpg" alt="Vestido Florido">
+                <h3>Vestido Florido</h3>
+                <p class="categoria">Moda Praia</p>
+                <p class="preco">R$ 299,99</p>
+                <p class="descricao">Vestido leve e arejado, perfeito para dias ensolarados. Feito com tecido 100% algodão e estampa floral exclusiva.</p>
+            </article>
+
+            <article class="produto">
+                <img src="Vestido roxo.jpg" alt="Vestido Roxo">
+                <h3>Vestido Roxo</h3>
+                <p class="categoria">Moda Praia</p>
+                <p class="preco">R$ 450,00</p>
+                <p class="descricao">Vestido elegante e sofisticado, perfeito para ocasiões especiais. Feito com tecido de alta qualidade e caimento impecável.</p>
+            </article>
+
+            <article class="produto">
+                <img src="Conjunto Marrom.jpg" alt="Conjunto Marrom">
+                <h3>Conjunto Marrom</h3>
+                <p class="categoria">Moda Praia</p>
+                <p class="preco">R$ 399,99</p>
+                <p class="descricao">Conjunto leve e confortável, ideal para dias de sol. Feito com tecido de alta qualidade e estampa exclusiva.</p>
+            </article>
+
+          
+</body>
+</html>
