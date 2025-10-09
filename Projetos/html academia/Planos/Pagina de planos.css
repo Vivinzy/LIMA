@@ -1,0 +1,256 @@
+
+:root {
+    --bg-main: #141414; /* Fundo principal escuro */
+    --bg-card: #1f1f1f; /* Fundo dos cartões */
+    --header-bg: #fff; /* Fundo do cabeçalho é branco */
+    --text-dark: #333;
+    --text-light: #fff;
+    --text-detail: #888;
+    --primary-purple: #9c27b0; /* Roxo principal para links e preços */
+    --check-green: #38b038; /* Verde para os checks */
+    --button-bg: #3c3c3c; /* Fundo do botão "Contratar" */
+    --button-hover: #555;
+    
+    /* Fontes (Ajuste para a sua fonte pixelizada) */
+    --font-pixel: 'Courier New', monospace; /* Título e Link Ativo */
+    --font-body: 'Arial', sans-serif; /* Texto normal */
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-main);
+    color: var(--text-light);
+    min-height: 100vh;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ========================================================= */
+/* ESTILO DO CABEÇALHO (HEADER) */
+/* ========================================================= */
+header {
+    background-color: var(--header-bg);
+    border-bottom: 1px solid #ddd;
+    padding: 0 40px;
+    
+    /* Grid/Flex para a estrutura */
+    display: flex;
+    flex-direction: column; /* Para colocar o "Plano" em cima */
+}
+
+/* "Plano" no topo esquerdo */
+.header-top-left {
+    color: var(--text-detail);
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.header-main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.header-logo-nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo e Nome */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 40px;
+    color: var(--text-dark);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.logo-academia {
+    /* Define a largura */
+    width: 300px;
+    /* Deixa a altura se ajustar automaticamente para não distorcer */
+    height: auto; 
+    /* Adiciona borda arredondada (opcional) */
+    border-radius: 10px;
+}
+
+.logo-icon {
+    width: 25px;
+    filter: sepia(100%) hue-rotate(270deg) saturate(300%); 
+
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+header nav ul li a {
+    color: var(--text-dark);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+header nav ul li a.nav-active {
+    color: var(--primary-purple);
+    font-family: var(--font-pixel); 
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 3px solid var(--primary-purple);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-dark);
+    font-size: 14px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ddd; 
+}
+
+
+main {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title {
+    font-family: var(--font-pixel); /* Fonte pixelizada para o título */
+    color: var(--text-light);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    /* A sombra é crucial para o efeito 3D pixelado */
+    text-shadow: 4px 4px 0 #000;
+}
+
+/* ========================================================= */
+/* CARTÕES DE PLANOS (PLANS-CONTAINER) */
+/* ========================================================= */
+.plans-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.plan-card {
+    background-color: var(--bg-card);
+    border: 2px solid var(--primary-purple); /* Borda roxa fina */
+    border-radius: 8px;
+    padding: 30px 20px 25px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(156, 39, 176, 0.4); /* Sombra roxa sutil */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ícones de Estrela, Medalha, Troféu */
+.plan-icon {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    /* Para dar o efeito de fundo no ícone */
+    background-color: var(--bg-card); 
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.plan-card h2 {
+    font-family: var(--font-pixel); /* Título do cartão pixelizado */
+    color: var(--text-light);
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.plan-card h3 {
+    color: var(--text-detail);
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/* Lista de Vantagens */
+.plan-features {
+    text-align: left;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.plan-features li {
+    display: flex;
+    align-items: flex-start;
+    color: var(--text-light);
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.plan-features li img {
+    width: 16px; 
+    height: 16px;
+    margin-right: 10px;
+    filter: invert(44%) sepia(85%) saturate(375%) hue-rotate(69deg) brightness(94%) contrast(90%);
+}
+
+/* Preço */
+.plan-price {
+    font-family: var(--font-pixel); /* Preço pixelizado */
+    color: var(--primary-purple);
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
+}
+
+/* Botão "Contratar plano" */
+.btn-contratar {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: 1px solid var(--text-detail);
+    border-radius: 4px;
+    padding: 8px 15px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btn-contratar:hover {
+    background-color: var(--button-hover);
+    border-color: var(--primary-purple);
+}
